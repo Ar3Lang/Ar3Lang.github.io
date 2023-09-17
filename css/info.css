@@ -1,17 +1,36 @@
 /* 全局 */
 html{
-    font-family: 阿里巴巴普惠体, Arial;
+    font-family: 思源黑体, Arial;
     color: gray;
 }
 /*盒子*/
-div2{
+.circle-container {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 1024px;
+    min-width: 100%;
+    max-height: 512px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 50% 50%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+.logo{
     display: flex;
     justify-content: center;
+    transform: translate(0,-32px);
 }
-div3{
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f5f5f5;
+.bottominfo{
+    background-color: #d3d3d3;
+    padding: 20px 0 5px 0;
+}
+#copyright{
+    font-size: 12px;
+    color: grey;
+    text-align: center;
 }
 /*info*/
 .info2{
@@ -45,14 +64,24 @@ div3{
     }
 }
 .daohangbox{
-    width: 12%;
+    width: 11.538%;
     height: 64px;
-    margin: 4px;
-    background-color: #efefef;
+    /* background-color: #efefef; */
     padding: 0 0 10px 0;
     position: relative;
 }
-
+.icondaohang{
+    width:50%;
+    height: 48px;
+    position: relative;
+    left: 25%
+}
+.daohangtext{
+    font-size: small;
+    display: flex;
+    justify-content:center;
+    color: #505050;
+}
 
 .title1{
     font-size: 26px;
@@ -73,16 +102,16 @@ div3{
     .aboutmebox{
         width: 30%;
         height: 96px;
-        background-color: #efefef;
+        /* background-color: #efefef; */
         margin: 8px;
         padding: 0 0 10px 0;
         position: relative;
     }
     .aboutmebox::before {
         content: "";
-        width: 4px;
-        height: 75%;
-        background-color: #757575;
+        width: 2px;
+        height: 55%;
+        background-color: #c2c2c2;
         position: absolute;
         right: -10px;
         top: 12px;
@@ -105,11 +134,11 @@ div3{
 }
 /* */
     .represent{
-        padding: 0 0 0 24px;
+        padding: 0 24px 0 24px;
     }
     #freedomcontainer{
         height: 128px;
-        background-color: #efefef;
+        background: linear-gradient(to right, #f5779d55, #ffffff00);
         position: relative;
         cursor: pointer;
     }
@@ -126,7 +155,7 @@ div3{
 
     #dreamerscontainer{
         height: 128px;
-        background-color: #efefef;
+        background: linear-gradient(to left, #f2963855, #ffffff00);
         text-align: right;
         position: relative;
         cursor: pointer;
@@ -167,6 +196,7 @@ div3{
         font-size: 24px;
         font-family: Century Gothic;
         font-weight: bold;
+        color:#505050;
     }
     @media (max-width:720px) {
         #freedomtitle {
@@ -181,6 +211,7 @@ div3{
         font-size: 24px;
         font-family: Century Gothic;
         font-weight: bold;
+        color:#505050;
     }
     @media (max-width:720px) {
         #dreamerstitle {
@@ -189,12 +220,13 @@ div3{
     }
 
     #freedomcontext{
-        padding: 0 0 0 24px;
+        padding: 0 24px 0 24px;
         position: absolute;
         left: 140px;
         top: 36px;
         font-size: 14px;
         font-family: Century Gothic;
+        color:#757575;
     }
     @media (max-width:720px) {
         #freedomcontext {
@@ -202,12 +234,13 @@ div3{
         }
     }
     #dreamerscontext{
-        padding: 0 24px 0 0;
+        padding: 0 24px 0 24px;
         position: absolute;
         right: 140px;
         top: 36px;
         font-size: 14px;
         font-family: Century Gothic;
+        color:#757575;
     }
     @media (max-width:720px) {
         #dreamerscontext {
@@ -250,12 +283,37 @@ div3{
     .collabpic{
         width: 100%;
     }
-
-.playlist{
-    padding: 0 0 0 24px;
-}
-.playlistbox{
-    height: 128px;
-    background-color: #efefef;
-    position: relative;
-}
+/* */
+    .playlist{
+        padding: 0 24px 0 24px;
+    }
+    .playlistbox{
+        background-color: #efefef;
+    }
+    #playlist1{
+        width: 48%;
+        height: 72px;
+        position: relative;
+    }
+    @media (min-width:720px){
+        #playlist1{
+            width:287px;
+        }
+    }
+    #playlist2{
+        width: 48%;
+        height: 72px;
+        left: 52%;
+        bottom: 72px;
+        position: relative;
+    }
+    @media (min-width:720px){
+        #playlist2{
+            width:287px;
+        }
+    }
+    .playlisttext{
+        position: absolute;
+        left: 80px;
+        top: 4px;
+    }
