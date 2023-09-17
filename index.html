@@ -7,16 +7,15 @@
 <title>Ar3Lang 个人网页</title>
 </head>
 <!--top-->
-<!-- <div1>
-    <div>
-        <h1>我的第一个标题</h1>
-        <p>我的第一个段落。</p>
-    </div1>
-</div1> -->
+<div1>
+    <div class="circle-container">
+        <img src="pic/20230916174056.jpg" style="width: 100%;">
+    </div>
+    <div class="logo">
+        <img src="pic/logo.png">
+    </div>
+</div1>
 <!--bottom-->
-<div2>
-    <p id="copyright">Ar3Lang © 2023</p>
-</div2>
 <!--context-->
 <div3>
     <div class="info1">
@@ -24,18 +23,25 @@
 
     <div class="info2">
             <div class="daohangbox">
-                <a href="163.music.com" class="daohangtext">网易云音乐</a></div>
+                <object data="svg/netease_cloud_music_icon.svg" class="icondaohang"></object>
+                <a href="163.music.com" class="daohangtext">网易云</a></div>
             <div class="daohangbox">
+                <object data="svg/youtube_icon_1.svg" class="icondaohang"></object>
                 <a href="163.music.com" class="daohangtext">Youtube</a></div>
             <div class="daohangbox">
+                <object data="svg/instagram_icon.svg" class="icondaohang"></object>
                 <a href="163.music.com" class="daohangtext">Instagram</a></div>
             <div class="daohangbox">
+                <object data="svg/discord_logo.svg" class="icondaohang"></object>
                 <a href="163.music.com" class="daohangtext">Discord</a></div>
             <div class="daohangbox">
-                <a href="163.music.com" class="daohangtext">Bilibili</a></div>
+                <object data="svg/soundcloud_icon.svg" class="icondaohang"></object>
+                <a href="163.music.com" class="daohangtext">声云</a></div>
             <div class="daohangbox">
+                <object data="svg/github_icon.svg" class="icondaohang"></object>
                 <a href="163.music.com" class="daohangtext">Github</a></div>
             <div class="daohangbox">
+                <object data="svg/mail_google_gmail_icon.svg" class="icondaohang"></object>
                 <a href="163.music.com" class="daohangtext">邮件</a></div>
     </div>
 
@@ -67,7 +73,6 @@
             </div>
             <p></p>
         </div>
-
         <a class="title2">合作</a>
         <div class="collab">
             <br>
@@ -92,16 +97,20 @@
         <a class="title2">歌单</a>
         <div class="playlist">
             <br>
-            <div class="playlistbox">
-                <img src="https://p1.music.126.net/nCzO9gKzv6yt59eAGXYL5g==/109951164534438486.jpg?param=96y96">
-                <a href="https://music.163.com/playlist?id=2950010813&userid=644117432">清新旋律Melodic House</a><br></div>
-            <div class="playlistbox">
-                <img src="https://p1.music.126.net/i44FJPEhqWwp8o56hGtR1A==/109951168596291699.jpg?param=96y96">
-                <a href="https://music.163.com/playlist?id=2776053817&userid=644117432">歌词翻译记录</a><br></div>
+            <div class="playlistbox" id="playlist1" onclick="redirectToLink('https://music.163.com/playlist?id=2950010813&userid=644117432')">
+                <img src="https://p1.music.126.net/nCzO9gKzv6yt59eAGXYL5g==/109951164534438486.jpg?param=72y72">
+                <a class="playlisttext">清新旋律 Melodic House</a><br></div>
+            <div class="playlistbox" id="playlist2" onclick="redirectToLink('https://music.163.com/playlist?id=2776053817&userid=644117432')"">
+                <img src="https://p1.music.126.net/i44FJPEhqWwp8o56hGtR1A==/109951168596291699.jpg?param=72y72">
+                <a class="playlisttext">歌词翻译记录</a><br>
+            </div>
             <p></p>
         </div>
     </div>
 </div3>
+<div class="bottominfo">
+    <p id="copyright">Ar3Lang © 2023</p>
+</div>
 </html>
 
 <script>
