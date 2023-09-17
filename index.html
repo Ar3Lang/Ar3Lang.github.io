@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="css/info.css" />
+
 <head>
 <meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
+<title>Ar3Lang 个人网页</title>
 </head>
-<body>
-    <h1>我的第一个标题</h1>
-    <p>我的第一个段落。</p>
-</body>
+<!--top-->
+<!-- <div1>
+    <div>
+        <h1>我的第一个标题</h1>
+        <p>我的第一个段落。</p>
+    </div1>
+</div1> -->
+<!--bottom-->
+<div2>
+    <p id="copyright">Ar3Lang © 2023</p>
+</div2>
+<!--context-->
+<div3>
+    <div class="info1">
+    </div>
+
+    <div class="info2">
+            <div class="daohangbox">
+                <a href="163.music.com" class="daohangtext">网易云音乐</a></div>
+            <div class="daohangbox">
+                <a href="163.music.com" class="daohangtext">Youtube</a></div>
+            <div class="daohangbox">
+                <a href="163.music.com" class="daohangtext">Instagram</a></div>
+            <div class="daohangbox">
+                <a href="163.music.com" class="daohangtext">Discord</a></div>
+            <div class="daohangbox">
+                <a href="163.music.com" class="daohangtext">Bilibili</a></div>
+            <div class="daohangbox">
+                <a href="163.music.com" class="daohangtext">Github</a></div>
+            <div class="daohangbox">
+                <a href="163.music.com" class="daohangtext">邮件</a></div>
+    </div>
+
+    <div class="info3">
+        <a class="title1">关于我</a>
+        <div class="aboutme">
+            <div class="aboutmecontainer">
+                <div class="aboutmebox"><a class="num1">700K</a><a class="num2">累计播放</a><br></div>
+                <div class="aboutmebox"><a class="num1">57K</a><a class="num2">累计收藏</a><br></div>
+                <div class="aboutmebox"><a class="num1">2,000</a><a class="num2">全网粉丝</a><br></div>
+            </div>
+            <p></p>
+        </div>
+        <a class="title2">代表作</a>
+        <div class="represent">
+            <div id="freedomcontainer" onclick="redirectToLink('https://music.163.com/#/song?id=1450574551')">
+                <div id="freedomtitle">
+                    Freedom
+                </div>
+                <div id="freedomcontext">于2020年5月发布于加拿大厂牌Summer Sounds，并以10k+播放获得Summer Sounds "Best of 2020" 年度播放排行前五位置</div>
+                <img id="freedompic" src="https://p2.music.126.net/DkCZvqY_OIEo4Wo6XYg-QA==/109951165013347517.jpg?param=128y128">
+            </div>
+            <div id="dreamerscontainer" onclick="redirectToLink('https://music.163.com/song?id=1460747227')">
+                <div id="dreamerstitle">
+                    Dreamers
+                </div>
+                <div id="dreamerscontext">于2020年7月个人发行，同时荣登网易云音乐国电榜第三。目前在SoundCloud取得20K播放，</div>
+                <img id="dreamerspic" src="https://p1.music.126.net/EDYs5Q1ahYARpoWhttOtVA==/109951165116405164.jpg?param=128y128">
+            </div>
+            <p></p>
+        </div>
+
+        <a class="title2">合作</a>
+        <div class="collab">
+            <br>
+            <div class="collabbox">
+                <img class="collabpic" src="http://p1.music.126.net/wxgsu2LAxK96KskwWqKKSg==/109951167124062591.jpg?param=128y128">
+                <a class="collabArtist">Satchel</a><br>
+                <object data="svg/pin.svg" class="iconpin"></object>
+                <a class="collabArtistFrom">贵州贵阳</a></div>
+            <div class="collabbox">
+                <img class="collabpic" src="http://p1.music.126.net/OKc2D9dWYbe3XWEBLzdu0w==/109951166878041276.jpg?param=128y128">
+                <a class="collabArtist">Henry Tsai</a><br>
+                <object data="svg/pin.svg" class="iconpin"></object>
+                <a class="collabArtistFrom">广东汕头</a></div>
+            <div class="collabbox">
+                <img class="collabpic" src="http://p2.music.126.net/ok0tTfZBD9FSnHpLiU_1gw==/109951165411759475.jpg?param=128y128">
+                <a class="collabArtist">Vince Fly</a><br>
+                <object data="svg/pin.svg" class="iconpin"></object>
+                <a class="collabArtistFrom">法国巴黎</a></div>
+            <p></p>
+        </div>
+
+        <a class="title2">歌单</a>
+        <div class="playlist">
+            <br>
+            <div class="playlistbox">
+                <img src="https://p1.music.126.net/nCzO9gKzv6yt59eAGXYL5g==/109951164534438486.jpg?param=96y96">
+                <a href="https://music.163.com/playlist?id=2950010813&userid=644117432">清新旋律Melodic House</a><br></div>
+            <div class="playlistbox">
+                <img src="https://p1.music.126.net/i44FJPEhqWwp8o56hGtR1A==/109951168596291699.jpg?param=96y96">
+                <a href="https://music.163.com/playlist?id=2776053817&userid=644117432">歌词翻译记录</a><br></div>
+            <p></p>
+        </div>
+    </div>
+</div3>
 </html>
+
+<script>
+    function redirectToLink(link) {
+    window.location.href = link;
+}
+</script>
