@@ -1,10 +1,18 @@
 /* 全局 */
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../font/GOTHIC.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'EnamelaW01-Condensed';
+    src: url('../font/Enamela W01 Condensed.ttf') format('truetype');
+}
 html{
     font-family: 思源黑体, Arial;
     color: rgb(94, 94, 94);
 }
 /* 盒子*/
-.circle-container {
+/* .circle-container {
     content: "";
     display: block;
     position: absolute;
@@ -16,7 +24,17 @@ html{
     border-radius: 0 0 25% 25%;
     z-index: -1;
     overflow: hidden;
+} */
+.circle-container{
+    padding-top: 256px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('../pic/20230916174056.jpg');
+    background-size: cover;
 }
+
 .logo{
     display: flex;
     justify-content: center;
@@ -39,77 +57,7 @@ html{
     animation: a 1s both;
     display: flex;
 }
-@media (min-width: 720px) {
-    .cardcontainer{
-        width: 624px;
-        padding: 0 48px 0 48px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-.cardimgcontainer{
-    width: 40%;
-    position: relative;
-    transform: translate(-15%,-5%);
-    scale: 125%;
-}
-.cardcontainer::before{
-    padding-top: 100%;
-}
-.cardimg{
-    width: 100%;
-}
-.cardnickname{
-    font-size: 24px;
-    font-weight: 700;
-    font-family: Century Gothic;
-    white-space: nowrap;
-}
-#nickname_sub{
-    font-size: small;
-    color: gray;
-    font-style: italic;
-    font-weight: 500;
-}
-.cardbio{
-    padding: 0 0 0 12px;
-    white-space: nowrap;
-}
-@media (max-width: 420px) {
-    .cardimgcontainer{
-        width: 60%;
-        position: relative;
-        transform: translate(-15%,0);
-        margin-top: auto;
-        margin-bottom: auto;
-        scale: 125%;
-    }
-    .cardcontainer::before{
-        display: block;
-        padding-top: 100%;
-    }
-    .cardimg{
-        width: 100%;
-    }
-    .cardnickname{
-        font-size: 18px;
-        font-weight: 600;
-        font-family: Century Gothic;
-        white-space: nowrap;
-    }
-    #nickname_sub{
-        font-size: small;
-        color: gray;
-        font-style: italic;
-        font-weight: 500;
-    }
-    .cardbio{
-        font-size: x-small;
-        position: absolute;
-        padding: 0 0 0 12px;
-        white-space: nowrap;
-    }
-}
+
 .info2{
     display: flex;
     justify-content: center;
@@ -166,7 +114,7 @@ html{
     padding: 8px 0 0 0;
     display: flex;
     justify-content: center;
-    font-family: century gothic;
+    font-family: century Gothic;
 }
 .title2{
     font-size: 18px;
@@ -407,3 +355,86 @@ html{
             transform: translateY(0)
         }
     }
+
+    @media (min-width: 720px) {
+        .cardcontainer{
+            width: 624px;
+            padding: 0 48px 0 48px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .cardimgcontainer{
+        width: 40%;
+        position: relative;
+        transform: translate(-15%,-5%);
+        scale: 125%;
+    }
+    .cardcontainer::before{
+        padding-top: 100%;
+    }
+    .cardimg{
+        width: 100%;
+    }
+    .cardnickname{
+        font-size: 24px;
+        font-weight: 700;
+        font-family: Century Gothic;
+        white-space: nowrap;
+    }
+    #nickname_sub{
+        font-size: small;
+        color: gray;
+        font-style: italic;
+        font-weight: 500;
+    }
+    .cardbio{
+        padding: 0 0 0 12px;
+        white-space: nowrap;
+    }
+
+@media (max-width: 500px) {
+    .circle-container{
+        padding-top: 192px;
+    }
+    .cardimgcontainer{
+        width: 50%;
+        position: relative;
+        transform: translate(-5%,0);
+        margin-top: auto;
+        margin-bottom: auto;
+        scale: 125%;
+    }
+    .cardcontainer::before{
+        display: block;
+        padding-top: 100%;
+    }
+    .cardimg{
+        width: 100%;
+    }
+    .cardnickname{
+        font-size: 18px;
+        font-weight: 600;
+        padding: 0 0 0 12px;
+        font-family: Century Gothic;
+        white-space: nowrap;
+    }
+    #nickname_sub{
+        font-size: small;
+        color: gray;
+        font-style: italic;
+        font-weight: 500;
+    }
+    .cardbio{
+        font-size: 12px;
+        position: absolute;
+        padding: 0 0 0 12px;
+        white-space: nowrap;
+    }
+    .daohangtext{
+        display: none;
+    }
+    .daohangbox{
+        height: 40px;
+    }
+}
