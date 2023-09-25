@@ -64,7 +64,8 @@ html{
     margin: 24px 4px 0px 4px;
     border-radius: 12px;
     background-color: #f5f5f5;
-    animation: a 1s both
+    animation-delay: 1s;
+    animation: a 1s both;
 }
 @media (min-width: 720px) {
     .info2{
@@ -78,7 +79,8 @@ html{
     margin: 24px 4px 0px 4px;
     background-color: #f5f5f5;
     border-radius: 12px;
-    animation: a 1s both
+    animation-delay: 2s;
+    animation: a 1s both;
 }
 @media (min-width: 720px) {
     .info3{
@@ -96,6 +98,7 @@ html{
     position: relative;
 }
 .icondaohang{
+    z-index: -1;
     width:50%;
     height: 48px;
     position: relative;
@@ -106,6 +109,24 @@ html{
     display: flex;
     justify-content:center;
     color: #505050;
+}
+#showDiv2{
+    z-index: -1;
+}
+/* .mailboxdiv{
+} */
+#hiddenDiv{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 240px;
+    padding: 12px;
+    font-size: small;
+    position: relative;
+    z-index: 1;
+    border-radius: 0 0 12px 12px;
+    background: linear-gradient(to top, #eeeeee, #f5f5f5);
 }
 
 .title1{
@@ -436,5 +457,18 @@ html{
     }
     .daohangbox{
         height: 40px;
+    }
+    #hiddenDiv{
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 75%;
+        padding: 10px;
+        font-size: small;
+        position: relative;
+        z-index: 1;
+        border-radius: 0 0 8px 8px;
+        background: linear-gradient(to top, #eeeeee, #f5f5f5);
     }
 }
