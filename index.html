@@ -3,10 +3,11 @@
 <link rel="stylesheet" href="css/info.css">
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Ar3Lang 个人网页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Ar3Lang 个人网页</title>
 </head>
 <!--top-->
+
 <body>
     <div1>
         <div class="circle-container">
@@ -19,17 +20,17 @@
     <div2>
         <div class="cardcontainer">
             <div class="cardimgcontainer">
-                    <img class="cardimg" src="pic/cardimg.png">
+                <img class="cardimg" src="pic/cardimg.png">
             </div>
             <div class="cardtext">
-                    <a class="cardnickname" id="nickname_main">Ar3Lang</a>
-                    <a class="cardnickname" id="nickname_sub">(Wheazewolf，维狼)</a>
-                    <br>
-                    <a class="cardbio" id="bio_working">网易音乐人，业余平面设计爱好者</a>
-                    <br>
-                    <a class="cardbio" id="bio_place">广东·潮州  |  所在地：甘肃</a>
-                </div>
+                <a class="cardnickname" id="nickname_main">Ar3Lang</a>
+                <a class="cardnickname" id="nickname_sub">(Wheazewolf，维狼)</a>
+                <br>
+                <a class="cardbio" id="bio_working">网易音乐人，业余平面设计爱好者</a>
+                <br>
+                <a class="cardbio" id="bio_place">广东·潮州 | 所在地：甘肃</a>
             </div>
+        </div>
         </div>
     </div2>
     <!--bottom-->
@@ -37,31 +38,40 @@
     <div3>
         <div class="info1">
         </div>
-    
+
         <div class="info2">
-                <div class="daohangbox">
-                    <object data="svg/netease_cloud_music_icon.svg" class="icondaohang"></object>
-                    <a href="163.music.com" class="daohangtext">网易云</a></div>
-                <div class="daohangbox">
-                    <object data="svg/youtube_icon_1.svg" class="icondaohang"></object>
-                    <a href="163.music.com" class="daohangtext">Youtube</a></div>
-                <div class="daohangbox">
-                    <object data="svg/instagram_icon.svg" class="icondaohang"></object>
-                    <a href="163.music.com" class="daohangtext">Instagram</a></div>
-                <div class="daohangbox">
-                    <object data="svg/discord_logo.svg" class="icondaohang"></object>
-                    <a href="163.music.com" class="daohangtext">Discord</a></div>
-                <div class="daohangbox">
-                    <object data="svg/soundcloud_icon.svg" class="icondaohang"></object>
-                    <a href="163.music.com" class="daohangtext">声云</a></div>
-                <div class="daohangbox">
-                    <object data="svg/github_icon.svg" class="icondaohang"></object>
-                    <a href="163.music.com" class="daohangtext">Github</a></div>
-                <div class="daohangbox">
-                    <object data="svg/mail_google_gmail_icon.svg" class="icondaohang"></object>
-                    <a href="163.music.com" class="daohangtext">邮件</a></div>
+            <div class="daohangbox" onclick="redirectToLink('https://music.163.com/#/user/home?id=644117432')">
+                <object data="svg/netease_cloud_music_icon.svg" class="icondaohang"></object>
+                <a href="https://music.163.com/#/user/home?id=644117432" class="daohangtext">网易云</a>
+            </div>
+            <div class="daohangbox" onclick="redirectToLink('https://www.youtube.com/channel/UCkkB1fwCcr6RmdUQkTJdWsA')">
+                <object data="svg/youtube_icon_1.svg" class="icondaohang"></object>
+                <a href="https://www.youtube.com/channel/UCkkB1fwCcr6RmdUQkTJdWsA" class="daohangtext">Youtube</a>
+            </div>
+            <div class="daohangbox" onclick="redirectToLink('https://www.instagram.com/wheazewolfmusic/')">
+                <object data="svg/instagram_icon.svg" class="icondaohang"></object>
+                <a href="https://www.instagram.com/wheazewolfmusic/" class="daohangtext">Instagram</a>
+            </div>
+            <div class="daohangbox" onclick="redirectToLink('https://discord.com/users/736993720833933412')">
+                <object data="svg/discord_logo.svg" class="icondaohang"></object>
+                <a href="https://discord.com/users/736993720833933412" class="daohangtext">Discord</a>
+            </div>
+            <div class="daohangbox" onclick="redirectToLink('https://soundcloud.com/wheazewolf')">
+                <object data="svg/soundcloud_icon.svg" class="icondaohang"></object>
+                <a href="https://soundcloud.com/wheazewolf" class="daohangtext">声云</a>
+            </div>
+            <div class="daohangbox" onclick="redirectToLink('https://github.com/Ar3Lang')">
+                <object data="svg/github_icon.svg" class="icondaohang"></object>
+                <a href="https://github.com/Ar3Lang" class="daohangtext">Github</a>
+            </div>
+            <div class="daohangbox" id="showDiv" onclick="toggleDisplay()">
+                <object data="svg/mail_google_gmail_icon.svg" id="showDiv2" class="icondaohang" onclick="toggleDisplay()"></object>
+                <a class="daohangtext">邮件</a>
+            </div>
         </div>
-    
+        <div class="mailboxdiv" id="hiddenDiv">
+            <a>邮箱：wheazewolf@gmail.com</a>
+        </div>
         <div class="info3">
             <a class="title1">关于Wheazewolf</a>
             <div class="aboutme">
@@ -78,15 +88,18 @@
                     <div id="freedomtitle">
                         Freedom
                     </div>
-                    <div id="freedomcontext">于2020年5月发布于加拿大厂牌Summer Sounds，并以10k+播放获得Summer Sounds "Best of 2020" 年度播放排行前五位置</div>
-                    <img id="freedompic" src="https://p2.music.126.net/DkCZvqY_OIEo4Wo6XYg-QA==/109951165013347517.jpg?param=128y128">
+                    <div id="freedomcontext">于2020年5月发布于加拿大厂牌Summer Sounds，并以10k+播放获得Summer Sounds "Best of 2020"
+                        年度播放排行前五位置</div>
+                    <img id="freedompic"
+                        src="https://p2.music.126.net/DkCZvqY_OIEo4Wo6XYg-QA==/109951165013347517.jpg?param=128y128">
                 </div>
                 <div id="dreamerscontainer" onclick="redirectToLink('https://music.163.com/song?id=1460747227')">
                     <div id="dreamerstitle">
                         Dreamers
                     </div>
                     <div id="dreamerscontext">个人认为是质量最高的单曲之一。于2020年7月个人发行，荣登同期网易云音乐国电榜第三。目前在SoundCloud取得20K播放量。</div>
-                    <img id="dreamerspic" src="https://p1.music.126.net/EDYs5Q1ahYARpoWhttOtVA==/109951165116405164.jpg?param=128y128">
+                    <img id="dreamerspic"
+                        src="https://p1.music.126.net/EDYs5Q1ahYARpoWhttOtVA==/109951165116405164.jpg?param=128y128">
                 </div>
                 <p></p>
             </div>
@@ -94,31 +107,40 @@
             <div class="collab">
                 <br>
                 <div class="collabbox">
-                    <img class="collabpic" src="http://p1.music.126.net/wxgsu2LAxK96KskwWqKKSg==/109951167124062591.jpg?param=128y128">
+                    <img class="collabpic"
+                        src="http://p1.music.126.net/wxgsu2LAxK96KskwWqKKSg==/109951167124062591.jpg?param=128y128">
                     <a class="collabArtist">Satchel</a><br>
                     <object data="svg/pin.svg" class="iconpin"></object>
-                    <a class="collabArtistFrom">贵州贵阳</a></div>
+                    <a class="collabArtistFrom">贵州贵阳</a>
+                </div>
                 <div class="collabbox">
-                    <img class="collabpic" src="http://p1.music.126.net/OKc2D9dWYbe3XWEBLzdu0w==/109951166878041276.jpg?param=128y128">
+                    <img class="collabpic"
+                        src="http://p1.music.126.net/OKc2D9dWYbe3XWEBLzdu0w==/109951166878041276.jpg?param=128y128">
                     <a class="collabArtist">Henry Tsai</a><br>
                     <object data="svg/pin.svg" class="iconpin"></object>
-                    <a class="collabArtistFrom">广东汕头</a></div>
+                    <a class="collabArtistFrom">广东汕头</a>
+                </div>
                 <div class="collabbox">
-                    <img class="collabpic" src="http://p2.music.126.net/ok0tTfZBD9FSnHpLiU_1gw==/109951165411759475.jpg?param=128y128">
+                    <img class="collabpic"
+                        src="http://p2.music.126.net/ok0tTfZBD9FSnHpLiU_1gw==/109951165411759475.jpg?param=128y128">
                     <a class="collabArtist">Vince Fly</a><br>
                     <object data="svg/pin.svg" class="iconpin"></object>
-                    <a class="collabArtistFrom">法国巴黎</a></div>
+                    <a class="collabArtistFrom">法国巴黎</a>
+                </div>
                 <p></p>
             </div>
-    
+
             <a class="title2">歌单</a>
             <div class="playlist">
                 <br>
-                <div class="playlistbox" id="playlist1" onclick="redirectToLink('https://music.163.com/playlist?id=2950010813&userid=644117432')">
+                <div class="playlistbox" id="playlist1"
+                    onclick="redirectToLink('https://music.163.com/playlist?id=2950010813&userid=644117432')">
                     <img src="https://p1.music.126.net/nCzO9gKzv6yt59eAGXYL5g==/109951164534438486.jpg?param=72y72">
-                    <a class="playlisttext">清新旋律 Melodic House</a><br></div>
-                <div class="playlistbox" id="playlist2" onclick="redirectToLink('https://music.163.com/playlist?id=2776053817&userid=644117432')"">
-                    <img src="https://p1.music.126.net/i44FJPEhqWwp8o56hGtR1A==/109951168596291699.jpg?param=72y72">
+                    <a class="playlisttext">清新旋律 Melodic House</a><br>
+                </div>
+                <div class="playlistbox" id="playlist2"
+                    onclick="redirectToLink('https://music.163.com/playlist?id=2776053817&userid=644117432')">
+                    <img src=" https://p1.music.126.net/i44FJPEhqWwp8o56hGtR1A==/109951168596291699.jpg?param=72y72">
                     <a class="playlisttext">歌词翻译记录</a><br>
                 </div>
                 <p></p>
@@ -134,6 +156,29 @@
 
 <script>
     function redirectToLink(link) {
-    window.location.href = link;
+        window.location.href = link;
+    }
+
+    function toggleDisplay() {
+  var hiddenDiv = document.getElementById("hiddenDiv");
+  
+  if (hiddenDiv.style.display === "none" || hiddenDiv.style.display === "") {
+    hiddenDiv.style.display = "flex";
+    document.addEventListener("click", handleClickOutside);
+  } else {
+    hiddenDiv.style.display = "none";
+    document.removeEventListener("click", handleClickOutside);
+  }
+}
+
+function handleClickOutside(event) {
+  var hiddenDiv = document.getElementById("hiddenDiv");
+  var showDiv = document.getElementById("showDiv");
+  var showDiv2 = document.getElementById("showDiv2");
+  
+  if (!hiddenDiv.contains(event.target) && event.target !== showDiv) {
+    hiddenDiv.style.display = "none";
+    document.removeEventListener("click", handleClickOutside);
+  }
 }
 </script>
